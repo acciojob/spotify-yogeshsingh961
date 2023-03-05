@@ -102,10 +102,7 @@ public class SpotifyRepository {
         if(album==null)
             throw new Exception("Album does not exist");
         else {
-            Song song = new Song();
-            song.setTitle(title);
-            song.setLength(length);
-            song.setLikes(0);
+            Song song = new Song(title,length);
 
             songs.add(song);
 
